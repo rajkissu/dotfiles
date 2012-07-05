@@ -60,8 +60,18 @@ set mouse=a
 " enable line numbers for NERDTree's explorer tab
 let NERDTreeShowLineNumbers=1
 
-" map NERDTree to F2
+" NERDTree on F2
 map <F2> :NERDTreeToggle<CR>
 
-" map Taglist Plus to F3
+" Taglist Plus on F3
 map <F3> :TlistToggle<CR>
+
+" Invisible characters on \l
+nmap <leader>l :set list!<CR>
+
+" change symbols for invisible characters
+set listchars=tab:▸\ ,eol:¬
+
+" Highlight invisible characters
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
