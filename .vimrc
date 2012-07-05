@@ -1,9 +1,24 @@
 " My vim configuration file
 
-" pathogen!
-call pathogen#infect()
-
 set nocompatible    " running Vim, not Vi!
+filetype off
+
+" vundle!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Let vundle manage vundle!
+Bundle 'gmarik/vundle'
+
+" Bundles to install
+Bundle 'vim-scripts/Color-Sampler-Pack'
+Bundle 'vim-scripts/ScrollColors'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'godlygeek/tabular'
+
 syntax on           " enable syntax highlighting (sets `filetype` to on as well)
 filetype plugin on  " enable filetype-specific indenting
 filetype indent on  " enable filetype-specific plugins
@@ -15,9 +30,7 @@ au BufRead,BufNewFile *.json setfiletype javascript
 au BufRead,BufNewFile *.less setfiletype css
 
 set textwidth=80    " set text width to 80 columns per line 
-
 set title           " show the title
-
 set number          " display line numbers
 
 " automatically indent when adding braces
@@ -42,6 +55,9 @@ set wildmenu
 
 set history=1000
 set mouse=a
+
+" enable line numbers for NERDTree's explorer tab
+let NERDTreeShowLineNumbers=1
 
 " map NERDTree to F2
 map <F2> :NERDTreeToggle<CR>
