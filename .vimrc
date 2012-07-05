@@ -77,3 +77,6 @@ set listchars=tab:▸\ ,eol:¬
 " highlight invisible characters
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+" set the terminal to 256 colors
+set t_Co=256
