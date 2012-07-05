@@ -2,7 +2,8 @@
 
 set nocompatible    " running Vim, not Vi!
 
-filetype off        " need this for vundle to work!
+filetype on     " so vim doesn't exit with an error (affects stock OSX vim)
+filetype off    " need this for vundle to work!
 
 " vundle!
 set rtp+=~/.vim/bundle/vundle/
@@ -21,12 +22,12 @@ Bundle 'int3/vim-taglist-plus'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
+Bundle 'altercation/vim-colors-solarized'
 
 filetype plugin indent on   " automatically detect filetypes
-syntax on                   " enable syntax highlighting (sets `filetype` to on as well)
 
-" associate .json with .js
-au BufRead,BufNewFile *.json setfiletype javascript
+syntax on                   " enable syntax highlighting (sets `filetype` to on as well)
+colorscheme solarized
 
 " associate .less with .css
 au BufRead,BufNewFile *.less setfiletype css
@@ -49,9 +50,6 @@ set softtabstop=4   " when hitting tab or backspace, how many spaces will a tab 
 set tabstop=4       " real tabs occupy 4 columns - will show with set list on
 set expandtab       " no real tabs! convert them to spaces
 set smarttab
-
-" mininum number of lines to keep below and above the cursor
-" set scrolloff=999
 
 " turn on command-line completion
 set wildmenu
@@ -78,5 +76,6 @@ set listchars=tab:▸\ ,eol:¬
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
 
-" set the terminal to 256 colors
-set t_Co=256
+" Powerline configuration
+let g:Powerline_symbols='fancy'
+set guifont=Monaco\ for\ Powerline
