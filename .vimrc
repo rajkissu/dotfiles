@@ -18,6 +18,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
+Bundle 'int3/vim-taglist-plus'
 
 syntax on           " enable syntax highlighting (sets `filetype` to on as well)
 filetype plugin on  " enable filetype-specific indenting
@@ -62,5 +63,5 @@ let NERDTreeShowLineNumbers=1
 " map NERDTree to F2
 map <F2> :NERDTreeToggle<CR>
 
-" map Taglist to F3
+" map Taglist Plus to F3
 map <F3> :TlistToggle<CR>
