@@ -1,7 +1,8 @@
 " My vim configuration file
 
 set nocompatible    " running Vim, not Vi!
-filetype off
+
+filetype off        " need this for vundle to work!
 
 " vundle!
 set rtp+=~/.vim/bundle/vundle/
@@ -11,18 +12,18 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles to install
-Bundle 'vim-scripts/Color-Sampler-Pack'
-Bundle 'vim-scripts/ScrollColors'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
 Bundle 'godlygeek/tabular'
 Bundle 'int3/vim-taglist-plus'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'pangloss/vim-javascript'
+Bundle 'leshill/vim-json'
 
-syntax on           " enable syntax highlighting (sets `filetype` to on as well)
-filetype plugin on  " enable filetype-specific indenting
-filetype indent on  " enable filetype-specific plugins
+filetype plugin indent on   " automatically detect filetypes
+syntax on                   " enable syntax highlighting (sets `filetype` to on as well)
 
 " associate .json with .js
 au BufRead,BufNewFile *.json setfiletype javascript
@@ -33,6 +34,10 @@ au BufRead,BufNewFile *.less setfiletype css
 set textwidth=80    " set text width to 80 columns per line 
 set title           " show the title
 set number          " display line numbers
+set laststatus=2    " always show the status line
+set encoding=utf-8  " set encoding to UTF-8
+set cmdheight=2     " set the commandline height to 2
+set autoread        " automatically reload the file if there are changes
 
 " automatically indent when adding braces
 set autoindent
@@ -46,10 +51,7 @@ set expandtab       " no real tabs! convert them to spaces
 set smarttab
 
 " mininum number of lines to keep below and above the cursor
-set scrolloff=999
-
-" use UTF-8
-set encoding=utf-8
+" set scrolloff=999
 
 " turn on command-line completion
 set wildmenu
@@ -72,6 +74,6 @@ nmap <leader>l :set list!<CR>
 " change symbols for invisible characters
 set listchars=tab:▸\ ,eol:¬
 
-" Highlight invisible characters
+" highlight invisible characters
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
