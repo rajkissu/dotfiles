@@ -13,6 +13,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles to install
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-surround'
@@ -22,15 +23,13 @@ Bundle 'int3/vim-taglist-plus'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'groenewege/vim-less'
 
 filetype plugin indent on   " automatically detect filetypes
 
 syntax on                   " enable syntax highlighting (sets `filetype` to on as well)
+let g:solarized_termcolors=256
 colorscheme solarized
-
-" associate .less with .css
-au BufRead,BufNewFile *.less setfiletype css
 
 set textwidth=80    " set text width to 80 columns per line 
 set title           " show the title
