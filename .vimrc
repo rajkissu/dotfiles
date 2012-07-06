@@ -34,6 +34,7 @@ let g:solarized_termcolors=256
 let g:solarized_visibility="low"
 colorscheme solarized
 
+set timeoutlen=250  " time in ms to wait after pressing ESC
 set textwidth=80    " set text width to 80 columns per line 
 set title           " show the title
 set number          " display line numbers
@@ -64,6 +65,10 @@ set wildmenu
 
 set history=1000
 set mouse=a
+
+" set splitting
+set splitbelow
+set splitright
 
 " enable line numbers for NERDTree's explorer tab
 let NERDTreeShowLineNumbers=1
