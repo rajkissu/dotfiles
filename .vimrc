@@ -13,22 +13,25 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles to install
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
-Bundle 'godlygeek/tabular'
-Bundle 'int3/vim-taglist-plus'
+Bundle 'benmills/vimux'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'groenewege/vim-less'
+Bundle 'tpope/vim-fugitive'
+Bundle 'gregsexton/gitv'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
+Bundle 'int3/vim-taglist-plus'
 
 filetype plugin indent on   " automatically detect filetypes
 
 syntax on                   " enable syntax highlighting (sets `filetype` to on as well)
 let g:solarized_termcolors=256
+let g:solarized_visibility="low"
 colorscheme solarized
 
 set textwidth=80    " set text width to 80 columns per line 
@@ -50,6 +53,12 @@ set tabstop=4       " real tabs occupy 4 columns - will show with set list on
 set expandtab       " no real tabs! convert them to spaces
 set smarttab
 
+" folding options
+set foldenable
+set foldmethod=marker
+set foldlevel=100
+set foldopen=block,hor,mark,percent,quickfix,tag
+
 " turn on command-line completion
 set wildmenu
 
@@ -70,10 +79,6 @@ nmap <leader>l :set list!<CR>
 
 " change symbols for invisible characters
 set listchars=tab:▸\ ,eol:¬
-
-" highlight invisible characters
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
 
 " Powerline configuration
 let g:Powerline_symbols='fancy'
