@@ -19,13 +19,14 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'leshill/vim-json'
 Bundle 'groenewege/vim-less'
-Bundle 'tpope/vim-fugitive'
 Bundle 'gregsexton/gitv'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'int3/vim-taglist-plus'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-speeddating'
 
 filetype plugin indent on   " automatically detect filetypes
 
