@@ -70,8 +70,9 @@ set mouse=a
 set splitbelow
 set splitright
 
-" enable line numbers for NERDTree's explorer tab
-let NERDTreeShowLineNumbers=1
+" NERDTree
+let NERDTreeShowLineNumbers=1 " enable line numbers
+let NERDTreeShowHidden=1
 
 " NERDTree on F2
 map <F2> :NERDTreeToggle<CR>
