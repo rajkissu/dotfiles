@@ -57,7 +57,7 @@ set smarttab
 
 " folding options
 set foldenable
-set foldmethod=marker
+set foldmethod=syntax
 set foldlevel=100
 set foldopen=block,hor,mark,percent,quickfix,tag
 
