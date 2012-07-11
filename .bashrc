@@ -9,7 +9,7 @@ alias start_redis='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.redis.
 alias stop_redis='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.redis.plist'
 
 # mongodb shortcuts
-alias resstart_mongo='launchctl stop homebrew.mxcl.mongodb'
+alias restart_mongo='launchctl stop homebrew.mxcl.mongodb'
 alias start_mongo='launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist'
 alias stop_mongo='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist'
 
