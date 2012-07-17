@@ -25,3 +25,7 @@ alias vim='mvim -v'
 
 # statusline
 export PS1='\u@\h:\w$ '
+
+# git and git-flow completion
+[ -r ~/git-completion.bash ] && source ~/git-completion.bash
+[ -r ~/git-flow-completion.bash ] && source ~/git-flow-completion.bash
