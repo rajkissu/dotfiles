@@ -82,7 +82,12 @@ map <F2> :NERDTreeToggle<CR>
 map <F3> :TlistToggle<CR>
 
 " Invisible characters on \l
-nmap <leader>l :set list!<CR>
+nmap <LEADER>l :set list!<CR>
+
+" Change tabwidth on \2, \4 and \8
+nmap <LEADER>2 <ESC>:set expandtab tabstop=2 softtabstop=2 shiftwidth=2<CR>
+nmap <LEADER>4 <ESC>:set expandtab tabstop=4 softtabstop=4 shiftwidth=4<CR>
+nmap <LEADER>8 <ESC>:set expandtab tabstop=8 softtabstop=8 shiftwidth=8<CR>
 
 " change symbols for invisible characters
 set listchars=tab:▸\ ,eol:¬
