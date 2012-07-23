@@ -17,7 +17,7 @@ Bundle 'benmills/vimux'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
-Bundle 'khmck/vim-coffee-script'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'groenewege/vim-less'
 Bundle 'wavded/vim-stylus'
@@ -57,6 +57,9 @@ set softtabstop=4   " when hitting tab or backspace, how many spaces will a tab 
 set tabstop=4       " real tabs occupy 4 columns - will show with set list on
 set expandtab       " no real tabs! convert them to spaces
 set smarttab
+
+" clipboard
+set clipboard=unnamed
 
 " folding options
 set foldenable
