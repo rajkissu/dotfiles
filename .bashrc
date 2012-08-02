@@ -23,6 +23,9 @@ export GREP_OPTIONS='--color=auto'
 # run MacVim from the terminal instead
 alias vim='mvim -v'
 
+# git alias!!
+alias g='git'
+
 # statusline
 export PS1='\u@\h:\w$ '
 
