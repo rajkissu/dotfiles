@@ -1,13 +1,32 @@
 [user]
 	name  = Raj Kissu
 	email = rajkissu@gmail.com
+
 [color]
 	status      = auto
 	diff        = auto
 	interactive = auto
 	branch      = auto
 	ui          = true
+
 [alias]
-    st = status
-	co = checkout
-    br = branch
+    a    = add
+    br   = branch
+    c    = commit
+    ca   = commit --amend
+	co   = checkout
+    f    = fetch
+    l    = log
+    m    = merge
+    ma   = merge --abort
+    mf   = merge --ff-only
+    mr   = merge --no-ff
+    ph   = push
+    pu   = pull
+    r    = rebase
+    ra   = rebase --abort
+    rc   = rebase --continue
+    ri   = rebase -i
+    sh   = show
+    st   = status
+    undo = reset --hard
