@@ -60,7 +60,7 @@ set expandtab       " no real tabs! convert them to spaces
 set smarttab
 
 " clipboard
-" set clipboard=unnamed
+set clipboard=unnamed
 
 " folding options
 set foldenable
