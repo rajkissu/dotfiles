@@ -30,7 +30,10 @@ Bundle 'int3/vim-taglist-plus'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-markdown'
 Bundle 'Townk/vim-autoclose'
+Bundle 'puppetlabs/puppet-syntax-vim'
+Bundle 'suan/vim-instant-markdown'
 
 filetype plugin indent on   " automatically detect filetypes
 
