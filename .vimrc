@@ -14,7 +14,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles to install
 Bundle 'benmills/vimux'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
@@ -102,6 +102,21 @@ nmap <LEADER>8 <ESC>:set expandtab tabstop=8 softtabstop=8 shiftwidth=8<CR>
 " change symbols for invisible characters
 set listchars=tab:▸\ ,eol:¬
 
-" Powerline configuration
-let g:Powerline_symbols='fancy'
-set guifont=Monaco\ for\ Powerline
+" airline configuration
+let g:airline_theme            = 'powerlineish'
+let g:airline_enable_branch    = 1
+let g:airline_enable_syntastic = 1
+set background=dark
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" old vim-powerline symbols
+let g:airline_left_sep = '⮀'
+let g:airline_left_alt_sep = '⮁'
+let g:airline_right_sep = '⮂'
+let g:airline_right_alt_sep = '⮃'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.readonly = '⭤'
+let g:airline_symbols.linenr = '⭡'
