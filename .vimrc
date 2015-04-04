@@ -1,6 +1,10 @@
 " My vim configuration file
 
 set nocompatible    " running Vim, not Vi!
+set t_Co=256
+set t_ut=           " disable background color erase
+set background=dark
+set termencoding=utf-8
 
 filetype on     " so vim doesn't exit with an error (affects stock OSX vim)
 filetype off    " need this for vundle to work!
@@ -103,20 +107,26 @@ nmap <LEADER>8 <ESC>:set expandtab tabstop=8 softtabstop=8 shiftwidth=8<CR>
 set listchars=tab:▸\ ,eol:¬
 
 " airline configuration
-let g:airline_theme            = 'powerlineish'
-let g:airline_enable_branch    = 1
-let g:airline_enable_syntastic = 1
-set background=dark
+" let g:airline_powerline_fonts  = 1
+let g:airline#extensions#branch#enabled = 1
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
 endif
 
 " old vim-powerline symbols
-let g:airline_left_sep = '⮀'
-let g:airline_left_alt_sep = '⮁'
-let g:airline_right_sep = '⮂'
-let g:airline_right_alt_sep = '⮃'
-let g:airline_symbols.branch = '⭠'
-let g:airline_symbols.readonly = '⭤'
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
 let g:airline_symbols.linenr = '⭡'
+let g:airline_symbols.branch = '⭠'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'ξ'
+let g:airline_symbols.readonly = '⭤'
