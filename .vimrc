@@ -38,6 +38,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'Townk/vim-autoclose'
 Bundle 'puppetlabs/puppet-syntax-vim'
 Bundle 'suan/vim-instant-markdown'
+Bundle 'othree/yajs.vim'
 
 filetype plugin indent on   " automatically detect filetypes
 
@@ -60,9 +61,9 @@ set autoindent
 set smartindent
 
 " tabs to be converted to a group of 4 spaces
-set shiftwidth=4    " auto-indent amount (when using smartindent, cindent, etc)
-set softtabstop=4   " when hitting tab or backspace, how many spaces will a tab be
-set tabstop=4       " real tabs occupy 4 columns - will show with set list on
+set shiftwidth=2    " auto-indent amount (when using smartindent, cindent, etc)
+set softtabstop=2   " when hitting tab or backspace, how many spaces will a tab be
+set tabstop=2       " real tabs occupy 4 columns - will show with set list on
 set expandtab       " no real tabs! convert them to spaces
 set smarttab
 
